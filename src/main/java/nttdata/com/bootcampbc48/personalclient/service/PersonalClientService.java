@@ -8,7 +8,6 @@ import nttdata.com.bootcampbc48.personalclient.dto.UpdatePersonalClientDto;
 import nttdata.com.bootcampbc48.personalclient.entity.PersonalClient;
 
 public interface PersonalClientService {
-
     public Single<PersonalClient> create(CreatePersonalClientDto createPersonalClientDto);
 
     public Flowable<PersonalClient> findAll();
