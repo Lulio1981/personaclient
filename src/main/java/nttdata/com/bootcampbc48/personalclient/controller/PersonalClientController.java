@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("client/personal")
-@Tag(name = "Personal Clients Information", description = "Manage personal clients and minimal accounts information")
+@Tag(name = "Personal Clients Information", description = "Manage personal clients")
 @CrossOrigin(value = {"*"})
 @RequiredArgsConstructor
 public class PersonalClientController {
