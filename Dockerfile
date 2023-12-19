@@ -30,9 +30,9 @@ RUN cat /etc/timezone
 
 WORKDIR /usr/src
 
-COPY ["./target/com.bootcampbc48.personalclient-0.0.1-SNAPSHOT.jar java-app.jar", "/usr/src/"]
+COPY ["./target/com.bootcampbc48.personalclient-0.0.1-SNAPSHOT.jar", "/usr/src/"]
 #COPY --from=builder ["/usr/src/target/app.jar", "/usr/src/"] ( ctrl + / to uncomment in intellij )
 
 EXPOSE 3000
 
-ENTRYPOINT ["java","-jar", "/usr/src/app.jar"]
+ENTRYPOINT ["java","-jar", "/usr/src/com.bootcampbc48.personalclient-0.0.1-SNAPSHOT.jar"]
